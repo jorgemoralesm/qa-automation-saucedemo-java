@@ -17,6 +17,7 @@ public class InventoryPage extends BasePage {
     }
 
     public boolean isAt() {
+        waitUrlContains("inventory");
         return driver.getCurrentUrl().contains("inventory") && text(title).equalsIgnoreCase("Products");
     }
 
@@ -25,7 +26,7 @@ public class InventoryPage extends BasePage {
     }
 
     public boolean backpackAdded() {
-        return !driver.findElements(removeBackpack).isEmpty();
+        return waitPresent(removeBackpack);
     }
 
     public void goToCart() {

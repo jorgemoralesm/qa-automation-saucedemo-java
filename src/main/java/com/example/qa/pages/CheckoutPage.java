@@ -18,6 +18,7 @@ public class CheckoutPage extends BasePage {
     }
 
     public void fillYourInformation(String fn, String ln, String pc) {
+        waitVisible(firstName);
         type(firstName, fn);
         type(lastName, ln);
         type(postalCode, pc);
@@ -36,6 +37,6 @@ public class CheckoutPage extends BasePage {
     }
 
     public String errorMessage() {
-        return driver.findElements(error).isEmpty() ? "" : text(error);
+        return waitPresent(error) ? text(error) : "";
     }
 }
