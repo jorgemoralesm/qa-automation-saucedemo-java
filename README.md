@@ -18,6 +18,9 @@ Proyecto de automatización E2E para un e-commerce (SauceDemo), simulando un ent
 ```bash
 mvn test
 
+
 ## Nota sobre warnings de CDP
 Al ejecutar con versiones recientes de Chrome, Selenium puede mostrar warnings de CDP (DevTools).
 No afecta a estos tests porque no usamos funcionalidades CDP (solo UI E2E con WebDriver).
+
+
