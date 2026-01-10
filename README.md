@@ -1,3 +1,4 @@
+[![UI Tests](https://github.com/jorgemoralesm/qa-automation-saucedemo-java/actions/workflows/maven.yml/badge.svg)](https://github.com/jorgemoralesm/qa-automation-saucedemo-java/actions/workflows/maven.yml)
 # qa-automation-saucedemo-java (Java + Selenium)
 Proyecto de automatización E2E para un e-commerce (SauceDemo), simulando un entorno real de QA Automation.
 
